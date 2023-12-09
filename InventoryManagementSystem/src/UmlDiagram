@@ -1,0 +1,28 @@
+Attributes (fields):
+
+name: String
+manufacturerName: String
+costPrice: double
+sellingPrice: double
+sellingPrice: double
+profit: double
+
+Constructors:
+
+InventoryItem()
+
+Getter/Setter methods:
+
+getName() - String
+setName(name: String) - void
+getManufacturer() - String
+setManufacturer(manufacturer: String) - void
+getCostPrice() - double
+setCostPrice(costPrice: double) - void
+getSellingPrice() - double
+setSellingPrice(sellingPrice: double) - void
+
+Methods:
+
+calculateProfit(): double
+sayTheVales(): void
