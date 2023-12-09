@@ -1,3 +1,11 @@
+
+/***********************************************************************
+ @Title:	CilMustafaMultiplicationTable
+ @Purpose:	Show multipliaction table for number which entered
+ @Author:    (Cil Mustafa)
+ @Date:   	(09.12.2023)
+ @Version:	1.0
+ ************************************************************************/
 import java.util.Scanner;
 
 public class CilMustafaMultiplicationTable {
