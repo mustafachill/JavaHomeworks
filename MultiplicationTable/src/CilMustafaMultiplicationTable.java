@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class CilMustafaMultiplicationTable {
     public static void main(String[] args) {
         int number = 0;
+        
         System.out.print("Enter your integer number: ");
         printTable(userInput(number));
     }
