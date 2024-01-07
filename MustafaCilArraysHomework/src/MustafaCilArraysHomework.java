@@ -15,7 +15,7 @@ public class MustafaCilArraysHomework {
         System.out.println("------------------------------");
 
         // enter inside temperature values
-        System.out.println("Please enter your input temperature values");
+        System.out.println("Please enter your inside temperature values");
         getUserInputForTemperature(insideTemperature);
         // converting celsius inside temperature values
         convertToCelsius(insideTemperature);
@@ -23,7 +23,7 @@ public class MustafaCilArraysHomework {
         displayArray(insideTemperature);
 
         // enter outside temperature values
-        System.out.println("Please enter your output temperature values: ");
+        System.out.println("Please enter your outside temperature values: ");
         getUserInputForTemperature(outsideTemperature);
         // converting celsius outside temperature values
         convertToCelsius(outsideTemperature);
@@ -74,7 +74,7 @@ public class MustafaCilArraysHomework {
         }
         for (int i = 0; i < differenceTemperatureCelsius.length; i++) {
             if (differenceTemperatureCelsius[i] < 0) {
-                holdTheNumber = differenceTemperatureCelsius[i] * 1;
+                holdTheNumber = differenceTemperatureCelsius[i] * -1;
             } else {
                 holdTheNumber = differenceTemperatureCelsius[i];
             }
