@@ -22,6 +22,9 @@ public class Main {
         int numberOfTheHottestDay = 0;
         int numberOfTheColdestDay = 0;
 
+        int hotDayCounter = 0;
+        int coldDayCounter = 0;
+
         for (int i = 0; i < days.length; i++) {
             if (i + 1 <= 31) {
                 // current month is January
@@ -181,6 +184,16 @@ public class Main {
                 coldestDayIndex = i;
             }
 
+
+
+            // below 33 - more than 75
+            if(days[i] < 33){
+                coldDayCounter++;
+            }
+            if(days[i] > 75){
+                hotDayCounter++;
+            }
+
         }
 
         // for find the hottest day's month
@@ -205,6 +218,9 @@ public class Main {
 
         System.out.println("The coldest day in the entire year was on " + currentDayForColdest + ", " + currentMonthForColdest + " " + numberOfTheColdestDay);
         System.out.println("It was " + smallestTemperature + " degree F on this day.");
+
+        System.out.println("There were " + hotDayCounter + " days where the temperature was above 75 degrees");
+        System.out.println("There were " + coldDayCounter + " days where the temperature was below 33 degrees");
     }
 
     public static String monthFinder(int dayIndex) {
@@ -251,21 +267,29 @@ public class Main {
     }
     public static String dayFinder(int dayIndex){
         String currentDayHolder = "";
-        switch (dayIndex % 7){
+        int number = dayIndex % 7;
+        switch (number){
             case 0:
                 currentDayHolder = "Monday";
+                break;
             case 1:
                 currentDayHolder = "Tuesday";
+                break;
             case 2:
                 currentDayHolder = "Wednesday";
+                break;
             case 3:
                 currentDayHolder = "Thursday";
+                break;
             case 4:
                 currentDayHolder = "Friday";
+                break;
             case 5:
                 currentDayHolder = "Saturday";
+                break;
             case 6:
                 currentDayHolder = "Sunday";
+                break;
         }
         return currentDayHolder;
     }
@@ -312,4 +336,5 @@ public class Main {
         return currentDayNumber;
 
     }
+
 }
