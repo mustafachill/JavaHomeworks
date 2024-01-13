@@ -5,16 +5,14 @@ public class Main {
     // (y-x+1) + x;           95 - 89 = 6 -> 6+1 = 7
     public static void main(String[] args) {
         Random random = new Random();
-        // days[i] = random.nextInt();
-        int days[] = new int[366];
 
+        int days[] = new int[366];
         int sumTemp = 0;
         double averageTemp = 0;
-
-        int smallestTemperature = days[54];
-        int coldestDayIndex = 100;
-        int biggestTemperature = days[43];
-        int hottestDayIndex = 3;
+        int smallestTemperature = 50;
+        int coldestDayIndex = 0;
+        int biggestTemperature = 50;
+        int hottestDayIndex = 0;
         String currentMonthForHottest = "";
         String currentMonthForColdest = "";
         String currentDayForHottest = "";
@@ -25,12 +23,11 @@ public class Main {
         int hotDayCounter = 0;
         int coldDayCounter = 0;
 
-        for (int i = 0; i < days.length; i++) {
+        for (int i = 0 ; i < days.length; i++) {
             if (i + 1 <= 31) {
                 // current month is January
                 // limit is 25–38 -> 38-25+1 = 14
                 days[i] = random.nextInt(14) + 25;
-
                 sumTemp = sumTemp + days[i];
                 if (i + 1 == 31) {
                     averageTemp = sumTemp / 31;
@@ -173,24 +170,22 @@ public class Main {
             }
 
 
-
             if (days[i] > biggestTemperature) {
                 biggestTemperature = days[i];
                 hottestDayIndex = i;
             }
 
-            if (days[i] < smallestTemperature) {
+            if (days[i] < smallestTemperature ){
                 smallestTemperature = days[i];
                 coldestDayIndex = i;
             }
 
 
-
             // below 33 - more than 75
-            if(days[i] < 33){
+            if (days[i] < 33) {
                 coldDayCounter++;
             }
-            if(days[i] > 75){
+            if (days[i] > 75) {
                 hotDayCounter++;
             }
 
@@ -265,10 +260,11 @@ public class Main {
         return currentMonthHolder;
 
     }
-    public static String dayFinder(int dayIndex){
+
+    public static String dayFinder(int dayIndex) {
         String currentDayHolder = "";
         int number = dayIndex % 7;
-        switch (number){
+        switch (number) {
             case 0:
                 currentDayHolder = "Monday";
                 break;
