@@ -1,3 +1,11 @@
+/***********************************************************************
+ @Title:	CilMustafaWordGuessGame.java
+ @Purpose:	to learning create basic game && algorithms
+ @Author:    (Cil Mustafa)
+ @Date:   	(13.01.2024)
+ @Version:	1.0
+ ************************************************************************/
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
@@ -72,7 +80,7 @@ public class Main {
         System.out.println("You have 3 chance for finding some letters");
         while (lettersPlace.contains('_')){
             if(counter < 3){
-                System.out.print("Make a guess:");
+                System.out.print("Make a guess: ");
                 guess = keyboard.next().charAt(0);
 
                 if(letters.contains(guess)){
@@ -109,6 +117,7 @@ public class Main {
         else{
             success = false;
             System.out.println("You didn't find the word :( ");
+            System.out.println("The word is: " + chosenWord);
         }
     }
 }
