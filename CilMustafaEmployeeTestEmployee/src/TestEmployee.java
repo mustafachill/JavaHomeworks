@@ -1,3 +1,11 @@
+/***********************************************************************
+ @Title:	CilMustafaTestEmployee.java
+ @Purpose:	To get familiar with usage of methods defined in a class
+ @Author:    (Cil Mustafa)
+ @Date:   	(12.01.2024)
+ @Version:	1.0
+ ************************************************************************/
+
 public class TestEmployee {
     public static void main(String[] args) {
         Employee mehmet = new Employee("Mehmet Arslan", 1, 55000, 40, "Software Developer", 5, 6);
