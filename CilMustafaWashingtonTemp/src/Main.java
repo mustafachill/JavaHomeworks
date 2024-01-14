@@ -1,5 +1,12 @@
-import java.util.Random;
+/***********************************************************************
+ @Title:	CilMustafaWashingtonTemp.java
+ @Purpose:	To get familiar with arrays and their usage
+ @Author:    (Cil Mustafa)
+ @Date:   	(13.01.2024)
+ @Version:	1.0
+ ************************************************************************/
 
+import java.util.Random;
 public class Main {
     // if we want a random number between x-y,
     // (y-x+1) + x;           95 - 89 = 6 -> 6+1 = 7
