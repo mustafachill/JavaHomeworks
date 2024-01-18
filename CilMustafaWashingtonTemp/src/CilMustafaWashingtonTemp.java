@@ -7,7 +7,7 @@
  ************************************************************************/
 
 import java.util.Random;
-public class Main {
+public class CilMustafaWashingtonTemp {
     // if we want a random number between x-y,
     // (y-x+1) + x;           95 - 89 = 6 -> 6+1 = 7
     public static void main(String[] args) {
@@ -214,13 +214,15 @@ public class Main {
         // for find the number of the hottest day
         numberOfTheColdestDay = dayNumberFinder(coldestDayIndex);
 
-
+        System.out.println("");
         System.out.println("The hottest day in the entire year was on " + currentDayForHottest + ", " + currentMonthForHottest + " " + numberOfTheHottestDay);
         System.out.println("It was " + biggestTemperature + " degree F on this day.");
 
+        System.out.println("");
         System.out.println("The coldest day in the entire year was on " + currentDayForColdest + ", " + currentMonthForColdest + " " + numberOfTheColdestDay);
         System.out.println("It was " + smallestTemperature + " degree F on this day.");
 
+        System.out.println("");
         System.out.println("There were " + hotDayCounter + " days where the temperature was above 75 degrees");
         System.out.println("There were " + coldDayCounter + " days where the temperature was below 33 degrees");
     }
