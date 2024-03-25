@@ -11,11 +11,11 @@ public class CilMustafaNameSorter {
         int howManyName = keyboard.nextInt();
         ArrayList<String> names = new ArrayList<String>();
 
+        System.out.println("Please enter your names:");
         for (int i = 0; i < howManyName; i++) {
             name = keyboard.next();
             names.add(name);
         }
-
 
         ArrayList<String> namesSelectionSort = new ArrayList<String>(names);
         ArrayList<String> namesBubbleSort = new ArrayList<String>(names);
